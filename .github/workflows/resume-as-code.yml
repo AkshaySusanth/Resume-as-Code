@@ -3,7 +3,7 @@ name: Code to Resume
 on:
   push:
     paths:
-      - *.tex
+      - '*.tex'
   workflow_dispatch:
 
 jobs:
