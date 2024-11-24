@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '*.tex'
-      - '.github\workflows\*'
+      - '.github/workflows/*'
   workflow_dispatch:
 
 jobs:
