@@ -45,18 +45,12 @@ jobs:
           name: compiled-pdf
           path: .
 
-      - name: Get commit message
-        id: vars
-        run: |
-          COMMIT_MESSAGE=$(jq -r .head_commit.message "$GITHUB_EVENT_PATH")
-          echo "commit_message=$COMMIT_MESSAGE" >> $GITHUB_ENV
-
       - name: Commit and Push PDF
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add resume.pdf
-          git commit -m "Created by Workflow for the commit - ${{ env.commit_message }}"
+          git commit -m "Created by the GitHub Actions Workflow"
           git push      
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
