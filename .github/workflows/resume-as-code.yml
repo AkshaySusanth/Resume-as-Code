@@ -25,7 +25,7 @@ jobs:
           mv resume-as-code.pdf resume.pdf
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
           path: resume.pdf
@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download PDF
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: compiled-pdf
           path: .
