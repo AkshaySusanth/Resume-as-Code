@@ -1,0 +1,228 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{AKSHAY SUSANTH} % Your Name
+\newcommand{\course}{Computer Science and Engineering} % Your Program
+\newcommand{\phone}{8281407163} % Your Phone Number
+\newcommand{\emaila}{akshaysusanth@outlook.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize }\ +91-\phone}\\
+  System Engineer & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize }\ {\emaila}} \\
+  {Kochi, Kerala, India} & \href{https://github.com/AkshaySusanth}{\raisebox{0.0\height}{\footnotesize }\ {GitHub Profile}} \\  
+   & \href{https://www.linkedin.com/in/akshay-susanth/}{\raisebox{0.0\height}{\footnotesize }\ {LinkedIn Profile}}
+\end{tabularx}
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Professional Summary}}
+	System Engineer with 3+ years of experience, focused on cloud computing and automation with a Bachelor of Technology, specializing in Computer Science and Engineering. Proficient in designing and implementing automation pipelines using GitHub Actions, Azure DevOps, Ansible, Python, Shell scripts and SQL streamlining workflows and reducing manual efforts. Excellent communication skills, with a focus on conveying complex technical concepts to diverse stakeholders. Passionate about innovation, continuous improvement, and delivering results that align with industry standards and business objectives.
+\vspace{0.7mm}
+%
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Tata Consultancy Services}{Hybrid}
+      {System Engineer}{July 2021 - Present}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+    \item {Designed and developed a GitHub Actions pipelines for automating Oracle Database patching and Application \& Database services management, reducing downtime by 25\% and manual efforts by 90\%.}
+    \item {Conceptualized and built a GitHub Actions pipeline to automate housekeeping activities using Ansible, Shell, and SQL, delivering a 95\% reduction in manual efforts.}
+    \item {Contributed to the migration project of Oracle Apps and Databases from on-premises to Azure using Azure DevOps and Ansible, resulting in a significant 25\% reduction in infrastructure costs.
+}
+    \item {Automated user management processes, including user creation, account removal upon departure, and log file purging using shell scripts, reducing turnaround time by 90\%, decreasing manual effort by 95\%, and achieving a 100\% reduction in incident count while enhancing security and operational efficiency.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{CGPA: 7.9}
+      {Federal Institute of Science and Technology, Kerala, India}{2017-21}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart  
+    \resumeProject
+      { Housekeeping Pipeline} %Project Name
+      {Implemented a GitHub Actions workflow to streamline the housekeeping processes in the databases.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item {Utilized Ansible playbooks for automating database housekeeping operations, including pre-checks, housekeeping scripts, and post-check validations across multiple tables.}
+	\item {Developed a reusable composite action for setting up SSH keys and Ansible environments based on environment-specific secrets, enhancing security and modularity.}
+        \item {Implemented a matrix strategy for parallel execution of table-specific housekeeping tasks, significantly reducing processing time.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+ \resumeProject
+      { Oracle Database Patching Workflow} %Project Name
+      {Developed a GitHub Actions workflow for automated patching and management of Oracle databases and associated applications.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item {Automated a range of actions, including: Application service status checks and management, Database and listener service start/stop/status management, Patching prerequisites validation, Oracle OPatch upgrades and Data Patch execution.}
+        \item {Utilized environment-specific private SSH keys stored securely in GitHub Secrets for Ansible connections. Ensured proper permissions and cleanup of sensitive keys post-execution.}
+	\item {Added pre-checks for invalid scenarios, such as avoiding data patches on standby databases or actions on non-existent nodes, ensuring reliability.}
+ 	\item {Designed workflow to gracefully handle invalid inputs or unsupported actions, exiting pipelines with appropriate messages. Incorporated conditional task execution to align with action type and environment requirements.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Certifications}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{GitHub Certified}{: GitHub Actions } \\  
+     \textbf{GitHub Certified}{: GitHub Copilot } \\  
+     \textbf{GitHub Certified}{: GitHub Fundamentals } \\  
+     \textbf{Microsoft Certified}{: Azure AI Engineer Assiociate } \\  
+     \textbf{Microsoft Certified}{: Azure AI Fundamentals } \\
+     \textbf{Microsoft Certified}{: Security Compliance and Identity Fundamentals } \\
+     \textbf{Microsoft Certified}{: Azure AI Fundamentals } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
