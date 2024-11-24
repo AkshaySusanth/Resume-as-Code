@@ -20,7 +20,9 @@ jobs:
           sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
       - name: Compile LaTeX to PDF
-        run: pdflatex -interaction=nonstopmode -halt-on-error -output-directory=. resume-as-code.tex
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=. resume-as-code.tex
+          mv resume-as-code.pdf resume.pdf
 
       - name: Upload PDF
         uses: actions/upload-artifact@v3
