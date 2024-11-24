@@ -32,10 +32,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-% Adjust margins
-%\addtolength{\oddsidemargin}{-0.5in}
-%\addtolength{\evensidemargin}{-0.5in}
-%\addtolength{\textwidth}{1in}
 \usepackage[most]{tcolorbox}
 \tcbset{
 	frame code={}
@@ -62,7 +58,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item{
@@ -96,8 +91,7 @@
     \vspace{-2.4mm}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-% \renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
 \newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
@@ -119,11 +113,11 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
-%%%%%% DEFINE ELEMENTS HERE %%%%%%%
-\newcommand{\name}{AKSHAY SUSANTH} % Your Name
-\newcommand{\course}{Computer Science and Engineering} % Your Program
-\newcommand{\phone}{8281407163} % Your Phone Number
-\newcommand{\emaila}{akshaysusanth@outlook.com} %Email 1
+
+\newcommand{\name}{AKSHAY SUSANTH} 
+\newcommand{\course}{Computer Science and Engineering} 
+\newcommand{\phone}{8281407163}
+\newcommand{\emaila}{akshaysusanth@outlook.com}
 
 \begin{document}
 \fontfamily{cmr}\selectfont
@@ -139,7 +133,7 @@
 }
 
 
-%-----------EDUCATION-----------
+%-----------SUMMARY-----------
 \section{\textbf{Professional Summary}}
 	System Engineer with 3+ years of experience, focused on cloud computing and automation with a Bachelor of Technology, specializing in Computer Science and Engineering. Proficient in designing and implementing automation pipelines using GitHub Actions, Azure DevOps, Ansible, Python, Shell scripts and SQL streamlining workflows and reducing manual efforts. Excellent communication skills, with a focus on conveying complex technical concepts to diverse stakeholders. Passionate about innovation, continuous improvement, and delivering results that align with industry standards and business objectives.
 \vspace{0.7mm}
@@ -182,9 +176,9 @@
 \section{\textbf{Projects}}
 \resumeSubHeadingListStart  
     \resumeProject
-      { Housekeeping Pipeline} %Project Name
-      {Implemented a GitHub Actions workflow to streamline the housekeeping processes in the databases.} %Project Name, Location Name
-      {} %Event Dates
+      { Housekeeping Pipeline} 
+      {Implemented a GitHub Actions workflow to streamline the housekeeping processes in the databases.}
+      {} 
 
       \resumeItemListStart
         \item {Utilized Ansible playbooks for automating database housekeeping operations, including pre-checks, housekeeping scripts, and post-check validations across multiple tables.}
@@ -194,9 +188,9 @@
     \vspace{-2mm}
     
  \resumeProject
-      { Oracle Database Patching Workflow} %Project Name
-      {Developed a GitHub Actions workflow for automated patching and management of Oracle databases and associated applications.} %Project Name, Location Name
-      {} %Event Dates
+      { Oracle Database Patching Workflow} 
+      {Developed a GitHub Actions workflow for automated patching and management of Oracle databases and associated applications.} 
+      {} 
 
       \resumeItemListStart
         \item {Automated a range of actions, including: Application service status checks and management, Database and listener service start/stop/status management, Patching prerequisites validation, Oracle OPatch upgrades and Data Patch execution.}
@@ -210,12 +204,7 @@
 \vspace{-8.5mm}
 
 
-
-
-
-
-
-%-----------Technical skills-----------------
+%-----------CERTIFICATIONS-----------------
 \section{\textbf{Certifications}}
  \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
@@ -231,35 +220,4 @@
  \vspace{-16pt}
 
 
-
-%-----------Positions of Responsibility-----------------
-%\section{\textbf{Positions of Responsibility}}
-%\vspace{-0.4mm}
-%\resumeSubHeadingListStart
-%\resumePOR{On Desk Registrations Volunteer } % Position
- %   {Aarhant Cyber Week Event - RCOEM, Nagpur} %Club,Event
- %   {Oct - Dec 2022} %Tenure Period \\
- %   \resumeItemListStart
- %   \item {Helped to attract close to 300 attendees to the event.}
- %   \item {Collected over Rs. 20,000 in entry fees for different activities.}
- %   \resumeItemListEnd
-
-%\resumeSubHeadingListEnd
-%\vspace{-5mm}
-
-% %-----------Achievements-----------------
-% \section{\textbf{Achievements}}
-% \vspace{-0.4mm}
-% \resumeSubHeadingListStart
-% \resumePOR{Achievement } % Award
-%     {description} % Event
-%     {Event dates} %Event Year
-    
-% \resumePOR{Achievement } % Award
-%     {description} % Event
-%     {Event dates} %Event Year
-% \resumeSubHeadingListEnd
-% \vspace{-5mm}
-
-%-------------------------------------------
-\end{document}
+ \end{document}
