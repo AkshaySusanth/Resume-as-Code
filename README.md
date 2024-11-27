@@ -1,4 +1,6 @@
-# Resume-as-Code
+# Resume-as-Code 
+
+![Workflow Status](https://github.com/AkshaySusanth/Resume-as-Code/actions/workflows/resume-as-code.yml/badge.svg)
 
 **Resume-as-Code** is a GitHub repository that transforms resume management into an automated, code-driven process. This project leverages GitHub Actions to ensure that the resume is always up-to-date and available in the repository.
 
